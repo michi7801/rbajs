@@ -1,0 +1,47 @@
+{
+  "riskThresholds": {
+    "none": 0,
+    "low": 0.2,
+    "medium": 0.3,
+    "high": 0.5,
+    "veryHigh": 0.6
+  },
+  "serverLocation": {
+    "longitude": 0,
+    "latitude": 0
+  },
+  "maxDirectionalRiskOffsetPercent": 0.7,
+  "weights": {
+    "ip": { "weight": 1, "enabled": true },
+    "travelSpeed": { "weight": 0.5, "enabled": true },
+    "loginAttempts": { "weight": 0.7, "enabled": true },
+    "timeOfDay": { "weight": 0.6, "enabled": true },
+    "roundTripTime": { "weight": 0.6, "enabled": true },
+    "userAgent": { "weight": 0.2, "enabled": true }
+  },
+  "travelSpeed": {
+    "maxSpeed": { "speed": 1200, "penalty": 1.0 },
+    "maxRealisticSpeed": { "speed": 900, "penalty": 0.9 },
+    "maxNonFlyingSpeed": { "speed": 320, "penalty": 0.6 },
+    "maxCarSpeed": { "speed": 200, "penalty": 0.4 },
+    "normalCarSpeed": { "speed": 130, "penalty": 0.2 }
+  },
+  "failedLoginAttemptsThreshold": {
+    "24h": 30,
+    "15m": 10,
+    "sensitivity": 1
+  },
+  "userAgent": {
+    "uaVersionParser": "^(\\d+)((\\.)(\\d+))?((\\.)(\\d+))?(([.-])(\\d+))?"
+  },
+  "timeOfDay": {
+    "graceMinutesToFullRisk": 120,
+    "graceCalculation": "lin",
+    "sensitivity": 2,
+    "atypicalWeekdayPenalty": 0.3
+  },
+  "roundTripTime": {
+    "roundToNearest": 10,
+    "graceToFullRisk": 50
+  }
+}

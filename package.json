@@ -1,0 +1,12 @@
+{
+  "name": "rbajs",
+  "version": "1.0.0",
+  "description": "A deterministic risk-based authentication solution developed for my master thesis.",
+  "license": "MIT",
+  "author": "Michael Kaltenbrunner",
+  "dependencies": {
+    "maxmind": "^5.0.5",
+    "ua-parser-js": "^2.0.9"
+  },
+  "type": "module"
+}
